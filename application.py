@@ -15,14 +15,14 @@ from sklearn.preprocessing import MinMaxScaler,StandardScaler,MaxAbsScaler, OneH
 
 # Loading the saved model
 #car
-car_model= pickle.load(open('D:/Price prediction model/car price prediction/carpriceprediction.pkl','rb'))
-car= pd.read_csv('D:/Price prediction model/car price prediction/car_clean.csv')
+car_model= pickle.load(open('carpriceprediction.pkl','rb'))
+car= pd.read_csv('car_clean.csv')
 #laptop
-laptop_model= pickle.load(open('D:/Price prediction model/laptop_prediction.pkl','rb'))
-laptop = pickle.load(open('D:/Price prediction model/df.pkl','rb'))
+laptop_model= pickle.load(open('laptop_prediction.pkl','rb'))
+laptop = pickle.load(open('df.pkl','rb'))
 #mobile
-mobile_model= pickle.load(open('D:/Price prediction model/mobile_model.pkl','rb'))
-mobile= pd.read_csv('D:/Price prediction model/mobile_clean.csv')
+mobile_model= pickle.load(open('mobile_model.pkl','rb'))
+mobile= pd.read_csv('mobile_clean.csv')
 
 def main():
     st.sidebar.title('Commodity Price Prediction Model')
